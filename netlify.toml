@@ -1,0 +1,10 @@
+[build]
+  base = "."  # Your build directory
+  publish = "dist/mean-task"  # Change this to match your actual dist folder name
+  command = "npm run build -- --configuration production"  # Updated build command for Angular 18
+
+  [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
